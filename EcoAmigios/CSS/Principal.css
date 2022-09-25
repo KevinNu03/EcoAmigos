@@ -1,0 +1,8 @@
+﻿body {
+    background-image: url('../Imagenes/Fondo.jpg');
+}
+.boton{
+    border-radius: 15px;
+    height: 350px;
+    border: 2px;
+}

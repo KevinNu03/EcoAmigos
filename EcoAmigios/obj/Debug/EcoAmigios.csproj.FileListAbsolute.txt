@@ -1,0 +1,260 @@
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\EcoAmigios.dll.config
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\EcoAmigios.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\EcoAmigios.pdb
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\csc.exe
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\csc.exe.config
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\csc.rsp
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\csi.exe
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\csi.exe.config
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\csi.rsp
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.AppContext.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Console.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.IO.Compression.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.IO.Pipes.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Security.Claims.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.ValueTuple.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Xml.XPath.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\vbc.exe
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\vbc.exe.config
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\vbc.rsp
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\VBCSCompiler.exe
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\obj\Debug\EcoAmigios.csprojAssemblyReference.cache
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\obj\Debug\EcoAmigios.csproj.CoreCompileInputs.cache
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\obj\Debug\EcoAmigios.csproj.CopyComplete
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\obj\Debug\EcoAmigios.dll
+C:\Users\eafgo\source\repos\EcoAmigios\EcoAmigios\obj\Debug\EcoAmigios.pdb
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\EcoAmigios.dll.config
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\EcoAmigios.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\EcoAmigios.pdb
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\csc.exe
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\csc.exe.config
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\csc.rsp
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\csi.exe
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\csi.exe.config
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\csi.rsp
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\Microsoft.CSharp.Core.targets
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\Microsoft.Managed.Core.targets
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\Microsoft.VisualBasic.Core.targets
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.AppContext.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Collections.Immutable.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Console.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Diagnostics.StackTrace.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.IO.Compression.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.IO.FileSystem.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.IO.FileSystem.Primitives.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.IO.Pipes.AccessControl.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.IO.Pipes.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Reflection.Metadata.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Security.AccessControl.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Security.Claims.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Security.Cryptography.Encoding.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Security.Cryptography.Primitives.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Security.Principal.Windows.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Text.Encoding.CodePages.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.ValueTuple.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Xml.ReaderWriter.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Xml.XmlDocument.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Xml.XPath.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\System.Xml.XPath.XDocument.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\vbc.exe
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\vbc.exe.config
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\vbc.rsp
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\VBCSCompiler.exe
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\roslyn\VBCSCompiler.exe.config
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\obj\Debug\EcoAmigios.csprojAssemblyReference.cache
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\obj\Debug\EcoAmigios.csproj.CoreCompileInputs.cache
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\obj\Debug\EcoAmigios.csproj.CopyComplete
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\obj\Debug\EcoAmigios.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\obj\Debug\EcoAmigios.pdb
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\libzstd.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\snappy32.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\snappy64.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\libsnappy64.so
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\libzstd.so
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\libsnappy64.dylib
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\libzstd.dylib
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\mongocrypt.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Data.Common.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Diagnostics.StackTrace.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Diagnostics.Tracing.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Globalization.Extensions.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.IO.Compression.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Net.Http.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Net.Sockets.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Runtime.Serialization.Primitives.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Security.Cryptography.Algorithms.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Security.SecureString.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Threading.Overlapped.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Xml.XPath.XDocument.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\DnsClient.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\Microsoft.Win32.Registry.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\MongoDB.Bson.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\MongoDB.Driver.Core.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\MongoDB.Driver.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\MongoDB.Libmongocrypt.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\SharpCompress.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Buffers.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Memory.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Numerics.Vectors.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Runtime.CompilerServices.Unsafe.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Security.AccessControl.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Security.Principal.Windows.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Text.Encoding.CodePages.dll
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\DnsClient.xml
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\Microsoft.Win32.Registry.xml
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\MongoDB.Bson.xml
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\MongoDB.Driver.xml
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\MongoDB.Driver.Core.xml
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Buffers.xml
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Memory.xml
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Numerics.Vectors.xml
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Runtime.CompilerServices.Unsafe.xml
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Security.AccessControl.xml
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Security.Principal.Windows.xml
+K:\kevin\Universidad\Proyecto integrador\EcoAmigios-gordo\EcoAmigios1\EcoAmigios\bin\System.Text.Encoding.CodePages.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\libzstd.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\snappy32.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\snappy64.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\libsnappy64.so
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\libzstd.so
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\libsnappy64.dylib
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\libzstd.dylib
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\mongocrypt.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\EcoAmigios.dll.config
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\EcoAmigios.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\EcoAmigios.pdb
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\csc.exe
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\csc.exe.config
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\csc.rsp
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\csi.exe
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\csi.exe.config
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\csi.rsp
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\Microsoft.CSharp.Core.targets
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\Microsoft.Managed.Core.targets
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\Microsoft.VisualBasic.Core.targets
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.AppContext.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Collections.Immutable.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Console.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Diagnostics.StackTrace.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.IO.Compression.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.IO.FileSystem.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.IO.FileSystem.Primitives.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.IO.Pipes.AccessControl.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.IO.Pipes.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Reflection.Metadata.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Security.AccessControl.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Security.Claims.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Security.Cryptography.Encoding.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Security.Cryptography.Primitives.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Security.Principal.Windows.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Text.Encoding.CodePages.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.ValueTuple.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Xml.ReaderWriter.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Xml.XmlDocument.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Xml.XPath.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\System.Xml.XPath.XDocument.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\vbc.exe
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\vbc.exe.config
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\vbc.rsp
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\VBCSCompiler.exe
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\roslyn\VBCSCompiler.exe.config
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Data.Common.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Diagnostics.StackTrace.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Diagnostics.Tracing.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Globalization.Extensions.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.IO.Compression.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Net.Http.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Net.Sockets.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Runtime.Serialization.Primitives.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Security.Cryptography.Algorithms.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Security.SecureString.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Threading.Overlapped.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Xml.XPath.XDocument.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\DnsClient.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\Microsoft.Win32.Registry.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\MongoDB.Bson.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\MongoDB.Driver.Core.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\MongoDB.Driver.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\MongoDB.Libmongocrypt.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\SharpCompress.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Buffers.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Memory.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Numerics.Vectors.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Runtime.CompilerServices.Unsafe.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Security.AccessControl.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Security.Principal.Windows.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Text.Encoding.CodePages.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\DnsClient.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\Microsoft.Win32.Registry.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\MongoDB.Bson.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\MongoDB.Driver.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\MongoDB.Driver.Core.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Buffers.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Memory.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Numerics.Vectors.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Runtime.CompilerServices.Unsafe.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Security.AccessControl.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Security.Principal.Windows.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\System.Text.Encoding.CodePages.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\obj\Debug\EcoAmigios.csprojAssemblyReference.cache
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\obj\Debug\EcoAmigios.csproj.CoreCompileInputs.cache
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\obj\Debug\EcoAmigios.csproj.CopyComplete
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\obj\Debug\EcoAmigios.dll
+K:\kevin\Documents\UNIVERSIDAD\LINEA 3\EcoAmigios-main\EcoAmigios\obj\Debug\EcoAmigios.pdb

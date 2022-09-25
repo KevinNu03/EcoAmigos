@@ -1,0 +1,30 @@
+﻿body {
+    background-color: palegreen;
+}
+
+.boton{
+    border-radius: 15px;
+    height: 30px;
+    width:170px;
+}
+
+.boton:hover{
+    background-color:antiquewhite;
+}
+
+.lista{
+    border-radius: 15px;
+    height : 30px;
+    width: 300px;
+}
+
+.texbox {
+    border-radius: 15px;
+    height: 30px;
+    width: 300px;
+}
+
+.texboxdesc {
+    border-radius: 15px;
+    width: 300px;
+}

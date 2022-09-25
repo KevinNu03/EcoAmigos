@@ -1,0 +1,354 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B1DE2A78-84B9-4887-8481-5EAEC56D40BD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EcoAmigios</RootNamespace>
+    <AssemblyName>EcoAmigios</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DnsClient, Version=1.6.0.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
+      <HintPath>..\packages\DnsClient.1.6.0\lib\net471\DnsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.15.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.15.0\lib\netstandard2.0\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.15.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.15.0\lib\netstandard2.0\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.15.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.15.0\lib\netstandard2.0\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Libmongocrypt, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Libmongocrypt.1.3.0\lib\netstandard2.0\MongoDB.Libmongocrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpCompress, Version=0.30.1.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpCompress.0.30.1\lib\net461\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.5.0.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Core\Compression\Snappy\lib\win\snappy32.dll" />
+    <Content Include="Core\Compression\Snappy\lib\win\snappy64.dll" />
+    <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
+    <Content Include="CSS\Creap_P.css" />
+    <Content Include="CSS\Cuenta.css" />
+    <Content Include="CSS\Editar_P.css" />
+    <Content Include="CSS\Login.css" />
+    <Content Include="CSS\LoginGa.css" />
+    <Content Include="CSS\Principal.css" />
+    <Content Include="CSS\Registro.css" />
+    <Content Include="CSS\Registro1.css" />
+    <Content Include="CSS\Registro2.css" />
+    <Content Include="CSS\RegistroGa.css" />
+    <Content Include="CSS\RegistroGa1.css" />
+    <Content Include="CSS\RegistroGa2.css" />
+    <Content Include="CSS\Ver_Pag.css" />
+    <Content Include="Forms\Crear_P_Grupo.aspx" />
+    <Content Include="Forms\Cuenta_Usu.aspx" />
+    <Content Include="Forms\Editar_Pagina.aspx" />
+    <Content Include="Forms\Inicio_Grupo.aspx" />
+    <Content Include="Forms\Inicio_Usu.aspx" />
+    <Content Include="Forms\Login_Ga.aspx" />
+    <Content Include="Forms\Login_Usu.aspx" />
+    <Content Include="Forms\Principal.aspx" />
+    <Content Include="Forms\Registro.aspx" />
+    <Content Include="Forms\Registro_Contraseña.aspx" />
+    <Content Include="Forms\Registro_Correo.aspx" />
+    <Content Include="Forms\Registro_Ga.aspx" />
+    <Content Include="Forms\Registro_Ga_Contraseña.aspx" />
+    <Content Include="Forms\Registro_Ga_Correo.aspx" />
+    <Content Include="Forms\Ver_Pagina.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Imagenes\actualizado.png" />
+    <Content Include="Imagenes\caminata ecologica.png" />
+    <Content Include="Imagenes\cancelar.png" />
+    <Content Include="Imagenes\cerrar-sesion.png" />
+    <Content Include="Imagenes\contraseña.png" />
+    <Content Include="Imagenes\crearPagina.png" />
+    <Content Include="Imagenes\cuenta.png" />
+    <Content Include="Imagenes\descarga.jfif" />
+    <Content Include="Imagenes\EcoAmigos 5.jpg" />
+    <Content Include="Imagenes\EcoAmigos 6.jpg" />
+    <Content Include="Imagenes\EcoAmigos.jpg" />
+    <Content Include="Imagenes\Ecoamigos1.png" />
+    <Content Include="Imagenes\EcoAmigos2.jpg" />
+    <Content Include="Imagenes\Ecoamigos3.jpg" />
+    <Content Include="Imagenes\EcoAmigos4.jpg" />
+    <Content Include="Imagenes\EcoAmigos6.jpg" />
+    <Content Include="Imagenes\EcoAmigos7.jpg" />
+    <Content Include="Imagenes\editarpagina.png" />
+    <Content Include="Imagenes\limpieza.png" />
+    <Content Include="Imagenes\menu.png" />
+    <Content Include="Imagenes\otro.png" />
+    <Content Include="Imagenes\pagina-de-destino.png" />
+    <Content Include="Imagenes\regreso.png" />
+    <Content Include="Imagenes\tigre de sumatra.jpg" />
+    <Content Include="Imagenes\Usuario sin foto.jpg" />
+    <Content Include="Imagenes\ver pagina.png" />
+    <Content Include="Imagenes\verificacion.png" />
+    <Content Include="Imagenes\videollamada.png" />
+    <Content Include="Imagenes\visitante.png" />
+    <Content Include="mongocrypt.dll" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Eventos.cs" />
+    <Compile Include="Class\Grupo_Ambiental.cs" />
+    <Compile Include="Class\Pagina.cs" />
+    <Compile Include="Class\Publicacion.cs" />
+    <Compile Include="Class\Usuario.cs" />
+    <Compile Include="Forms\Crear_P_Grupo.aspx.cs">
+      <DependentUpon>Crear_P_Grupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Crear_P_Grupo.aspx.designer.cs">
+      <DependentUpon>Crear_P_Grupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cuenta_Usu.aspx.cs">
+      <DependentUpon>Cuenta_Usu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Cuenta_Usu.aspx.designer.cs">
+      <DependentUpon>Cuenta_Usu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editar_Pagina.aspx.cs">
+      <DependentUpon>Editar_Pagina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Editar_Pagina.aspx.designer.cs">
+      <DependentUpon>Editar_Pagina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inicio_Grupo.aspx.cs">
+      <DependentUpon>Inicio_Grupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Inicio_Grupo.aspx.designer.cs">
+      <DependentUpon>Inicio_Grupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inicio_Usu.aspx.cs">
+      <DependentUpon>Inicio_Usu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Inicio_Usu.aspx.designer.cs">
+      <DependentUpon>Inicio_Usu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login_Ga.aspx.cs">
+      <DependentUpon>Login_Ga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Login_Ga.aspx.designer.cs">
+      <DependentUpon>Login_Ga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login_Usu.aspx.cs">
+      <DependentUpon>Login_Usu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Login_Usu.aspx.designer.cs">
+      <DependentUpon>Login_Usu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Principal.aspx.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Principal.aspx.designer.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Registro_Contraseña.aspx.cs">
+      <DependentUpon>Registro_Contraseña.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Registro_Contraseña.aspx.designer.cs">
+      <DependentUpon>Registro_Contraseña.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Registro_Correo.aspx.cs">
+      <DependentUpon>Registro_Correo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Registro_Correo.aspx.designer.cs">
+      <DependentUpon>Registro_Correo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Registro_Ga.aspx.cs">
+      <DependentUpon>Registro_Ga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Registro_Ga.aspx.designer.cs">
+      <DependentUpon>Registro_Ga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Registro_Ga_Contraseña.aspx.cs">
+      <DependentUpon>Registro_Ga_Contraseña.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Registro_Ga_Contraseña.aspx.designer.cs">
+      <DependentUpon>Registro_Ga_Contraseña.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Registro_Ga_Correo.aspx.cs">
+      <DependentUpon>Registro_Ga_Correo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Registro_Ga_Correo.aspx.designer.cs">
+      <DependentUpon>Registro_Ga_Correo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ver_Pagina.aspx.cs">
+      <DependentUpon>Ver_Pagina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Ver_Pagina.aspx.designer.cs">
+      <DependentUpon>Ver_Pagina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libmongocrypt.so" />
+    <Content Include="libmongocrypt.dylib" />
+    <Content Include="Core\Compression\Zstandard\lib\osx\libzstd.dylib" />
+    <Content Include="Core\Compression\Zstandard\lib\linux\libzstd.so" />
+    <Content Include="Core\Compression\Snappy\lib\osx\libsnappy64.dylib" />
+    <Content Include="Core\Compression\Snappy\lib\linux\libsnappy64.so" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62674</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62674/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\MongoDB.Libmongocrypt.1.3.0\build\MongoDB.Libmongocrypt.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MongoDB.Libmongocrypt.1.3.0\build\MongoDB.Libmongocrypt.targets'))" />
+    <Error Condition="!Exists('..\packages\MongoDB.Driver.Core.2.15.0\build\MongoDB.Driver.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MongoDB.Driver.Core.2.15.0\build\MongoDB.Driver.Core.targets'))" />
+  </Target>
+  <Import Project="..\packages\MongoDB.Libmongocrypt.1.3.0\build\MongoDB.Libmongocrypt.targets" Condition="Exists('..\packages\MongoDB.Libmongocrypt.1.3.0\build\MongoDB.Libmongocrypt.targets')" />
+  <Import Project="..\packages\MongoDB.Driver.Core.2.15.0\build\MongoDB.Driver.Core.targets" Condition="Exists('..\packages\MongoDB.Driver.Core.2.15.0\build\MongoDB.Driver.Core.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

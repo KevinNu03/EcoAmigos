@@ -1,0 +1,13 @@
+﻿body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: palegreen;
+
+}
+
+.texbox{
+    border-radius: 15px;
+}
