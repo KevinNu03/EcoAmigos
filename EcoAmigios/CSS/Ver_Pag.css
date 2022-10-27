@@ -7,7 +7,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     background-color: palegreen;
     overflow: auto !important;
     margin: 0;
@@ -29,94 +28,3 @@ body {
     
 }
 
-/* ====================
-    Background
-=======================*/
-
-.background {
-    width: 100vw;
-    height: 100vh;
-    animation: pulse 5s infinite;
-    overflow: hidden;
-}
-
-@keyframes pulse {
-    0% {
-        background: #7be359;
-    }
-
-    50% {
-        background: #7ed861;
-    }
-
-    100% {
-        background: #71d352;
-    }
-}
-
-.background p {
-    z-index: 999;
-    margin: 0;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: lato;
-    font-size: 70px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%);
-}
-
-.elements {
-    height: 100vh;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/* ====================
-      Squares
-=======================*/
-
-.square {
-    border: 10px dashed #99fd5d;
-}
-
-.sq2 {
-    animation: move1 180s infinite;
-    animation-timing-function: linear;
-    width: 1110px;
-    height: 1110px;
-}
-
-@keyframes move1 {
-    0% {
-        transform: rotate(0deg);
-        opacity: 0.5;
-    }
-
-    50% {
-        width: 1000px;
-        height: 1000px;
-    }
-
-    100% {
-        transform: rotate(1000deg);
-        opacity: 1;
-    }
-}
-
-.sq3 {
-    width: 600px;
-    height: 600px;
-    animation: move1 120s infinite;
-    animation-timing-function: linear;
-}
-
-.sq1 {
-    width: 500px;
-    height: 500px;
-    animation: move1 100s infinite;
-    animation-timing-function: linear;
-}

@@ -176,11 +176,7 @@
                 </tr>
             </table>
         </form>
-        <div class="elements">
-            <div class="square sq1"></div>
-            <div class="square sq2"></div>
-            <div class="square sq3"></div>
-        </div>
+       
     </div>
 </body>
 </html>
