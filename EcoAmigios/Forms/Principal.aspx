@@ -7,59 +7,33 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="../CSS/Principal.css" rel="stylesheet" />
     <title>Principal</title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            width: 766px;
-        }
-    </style>
-</head>
+    </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="contenedor">
+            <div class="hijo">
+                <div class="hijo1">
+                    <div class="hijo3">
+                        <asp:ImageButton ID="ImageButton3" CssClass="botonUsu" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/Imagenes/ImagenUsuario.png" Width="75%" Height="80%" BorderStyle="Solid" />
+                    &nbsp;
+                    <asp:Label ID="Label3" runat="server" Font-Names="Comic Sans MS" Font-Size="XX-Large" Text="USUARIO"></asp:Label>
+                    </div>
+                    <br />
+                </div>
+                <div class="hijo2">
+                    <div class="hijo3">
+                        <asp:ImageButton ID="ImageButton4" runat="server" OnClick="ImageButton2_Click" CssClass="botonGru" ImageUrl="~/Imagenes/ImagenGrupo.png" Width="75%" Height="80%" BorderStyle="Solid" />
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label4" runat="server" Font-Names="Comic Sans MS" Font-Size="XX-Large" Text="GRUPO"></asp:Label>
+                    <br />
+                    <asp:Label ID="Label5" runat="server" Font-Names="Comic Sans MS" Font-Size="XX-Large" Text="AMBIENTAL"></asp:Label>
+                </div>
 
-            <table class="auto-style1" >
-                <tr>
-                    <td class="auto-style2">
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:ImageButton ID="ImageButton1" CssClass="boton" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/Imagenes/programador.png" BorderStyle="Solid" />
-                        <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Label ID="Label1" runat="server" Font-Names="Comic Sans MS" Font-Size="XX-Large" Text="USUARIO"></asp:Label>
-                    </td>
-                    <td>
-                        
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" CssClass="boton" ImageUrl="~/Imagenes/proteccion-ambiental.png" BorderStyle="Solid"/>
-                        <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Label ID="Label2" runat="server" Font-Names="Comic Sans MS" Font-Size="XX-Large" Text="GRUPO AMBIENTAL"></asp:Label>
-                    </td>
-                </tr>
-            </table>
+            </div>
 
         </div>
+
     </form>
 </body>
 </html>

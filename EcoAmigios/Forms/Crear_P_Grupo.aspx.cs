@@ -1,5 +1,4 @@
 ﻿using EcoAmigios.Class;
-using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -38,10 +37,12 @@ namespace EcoAmigios.Forms
                     {
                         try
                         {
+                            conn.Close();
                             conn.Open();
                             string query = "insert into Pagina values('" + int.Parse(Session["Id_Grupo"].ToString()) + "','" + ListGtipo.Text + "','" + TbGNombre.Text + "','" + TbGDescripcion.Text + "','" + FileLogo.FileName + "')";
                             SqlCommand ejecutor = new SqlCommand(query, conn);
                             ejecutor.ExecuteNonQuery();
+                            Response.Redirect("Inicio_Grupo.aspx");
 
                         }
                         catch (Exception ex)
@@ -52,7 +53,7 @@ namespace EcoAmigios.Forms
                         {
                             conn.Close();
                         }
-                        Response.Redirect("Inicio_Grupo.aspx");
+                        
                     }
                 }
                 else

@@ -5,18 +5,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="../CSS/InicioGrupo.css" rel="stylesheet" />
     <title>Inicio</title>
     <style type="text/css">
-        body{
-            background-color:palegreen;
-        }
-        .botonP{
-            border-radius:15px;
-            background: none;
-        }
-        .botonP:hover{
-            background-color: mediumspringgreen;
-        }
+        
         .auto-style1 {
             width: 100%;
         }
@@ -34,12 +26,13 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="LabelNombre" runat="server"></asp:Label>
+            <div class="divMenu">
+                <asp:Label ID="LabelNombre" runat="server"></asp:Label>
             <br />
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style3">
-                        <asp:ImageButton ID="IMBCrearP" runat="server" Height="52px" ImageUrl="~/Imagenes/archivo-nuevo.png" Width="53px" OnClick="IMBCrearP_Click" />
+                        <asp:ImageButton ID="IMBCrearP" runat="server" Height="52px" ImageUrl="~/Imagenes/mas.png" Width="53px" OnClick="IMBCrearP_Click" />
                     </td>
                     <td class="auto-style2">
                         <asp:Label ID="Label5" runat="server" Font-Names="Comic Sans MS" Text="Crear Pagina"></asp:Label>
@@ -54,6 +47,8 @@
                     </td>
                 </tr>
             </table>
+            </div>
+            
             <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
                 <asp:View ID="View1" runat="server">
                     <asp:DataList ID="DataPaginas" runat="server" BorderColor="Gray" DataSourceID="SqlPagina" Font-Bold="False" Font-Italic="False" Font-Names="Comic Sans MS" Font-Overline="False" Font-Size="X-Large" Font-Strikeout="False" Font-Underline="False" GridLines="Both" HorizontalAlign="Center" OnItemCommand="DataPaginas_ItemCommand" RepeatColumns="5" CssClass="auto-style4">

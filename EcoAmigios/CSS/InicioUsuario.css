@@ -1,0 +1,48 @@
+﻿body {
+    background: #dd3e54; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6be585, #8360c3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6be585, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height:100% !important;
+}
+
+.btn {
+    background-color: #6be585;
+    border-radius: 8px;
+    border-bottom: groove;
+}
+
+.dropList {
+   display: flex;
+   align-content: center;
+   margin-left: 45%;
+   width:5%;
+}
+
+.btnDrop {
+    background-color: #a2bba0;
+    border-radius: 8px;
+    border-bottom: groove;
+    width: 20px;
+}
+
+.divMenu {
+    width: 20%;
+    height: 100%;
+    background-color: #8d938b;
+    border-radius: 8px;
+    color: white;
+}
+
+.formMenu {
+    width: 100%;
+    height: 300%;
+}
+
+.botonP {
+    border-radius: 15px;
+    background: #808080;
+}
+
+.botonP:hover {
+    background-color: mediumspringgreen;
+}

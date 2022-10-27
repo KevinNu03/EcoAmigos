@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EcoAmigios</RootNamespace>
     <AssemblyName>EcoAmigios</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -68,6 +69,7 @@
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -93,16 +95,14 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -115,7 +115,10 @@
     <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
     <Content Include="CSS\Creap_P.css" />
     <Content Include="CSS\Cuenta.css" />
+    <Content Include="CSS\CuentaUsuario.css" />
     <Content Include="CSS\Editar_P.css" />
+    <Content Include="CSS\InicioGrupo.css" />
+    <Content Include="CSS\InicioUsuario.css" />
     <Content Include="CSS\Login.css" />
     <Content Include="CSS\LoginGa.css" />
     <Content Include="CSS\Principal.css" />
@@ -143,12 +146,14 @@
     <Content Include="Forms\Ver_Pagina.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Imagenes\actualizado.png" />
+    <Content Include="Imagenes\ambiente.jpg" />
     <Content Include="Imagenes\caminata ecologica.png" />
     <Content Include="Imagenes\cancelar.png" />
     <Content Include="Imagenes\cerrar-sesion.png" />
     <Content Include="Imagenes\contraseña.png" />
     <Content Include="Imagenes\crearPagina.png" />
     <Content Include="Imagenes\cuenta.png" />
+    <Content Include="Imagenes\delete.png" />
     <Content Include="Imagenes\descarga.jfif" />
     <Content Include="Imagenes\EcoAmigos 5.jpg" />
     <Content Include="Imagenes\EcoAmigos 6.jpg" />
@@ -160,10 +165,18 @@
     <Content Include="Imagenes\EcoAmigos6.jpg" />
     <Content Include="Imagenes\EcoAmigos7.jpg" />
     <Content Include="Imagenes\editarpagina.png" />
+    <Content Include="Imagenes\filtrar.png" />
+    <Content Include="Imagenes\grupo.jpg" />
+    <Content Include="Imagenes\ImagenGrupo.png" />
+    <Content Include="Imagenes\ImagenUsuario.png" />
+    <Content Include="Imagenes\informacion-personal.png" />
     <Content Include="Imagenes\limpieza.png" />
+    <Content Include="Imagenes\mascotas.png" />
     <Content Include="Imagenes\menu.png" />
     <Content Include="Imagenes\otro.png" />
     <Content Include="Imagenes\pagina-de-destino.png" />
+    <Content Include="Imagenes\paisajeRegistro.jpg" />
+    <Content Include="Imagenes\registroGrupo.jpg" />
     <Content Include="Imagenes\regreso.png" />
     <Content Include="Imagenes\tigre de sumatra.jpg" />
     <Content Include="Imagenes\Usuario sin foto.jpg" />
@@ -172,7 +185,9 @@
     <Content Include="Imagenes\videollamada.png" />
     <Content Include="Imagenes\visitante.png" />
     <Content Include="mongocrypt.dll" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Eventos.cs" />

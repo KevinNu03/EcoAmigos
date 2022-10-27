@@ -10,9 +10,14 @@
     <style type="text/css">
         body{
             background-color: palegreen;
+            height:90%;
         }
         .auto-style1 {
-            width: 100%;
+            width: 40%;
+            height: 200%;
+        }
+        .auto-style1 {
+            width: 40%;
         }
         .auto-style3 {
             width: 1px;
@@ -22,21 +27,17 @@
         }
         .auto-style5 {
             width: 1px;
-            height: 56px;
+            height: 50px;
         }
         .auto-style6 {
             width: 721px;
-            height: 56px;
-        }
-        .auto-style7 {
-            width: 721px;
-            font-family: "Comic Sans MS";
+            height: 50px;
         }
         .auto-style9 {
             width: 232px;
         }
         .auto-style11 {
-            width: 213px;
+            width: 67%;
         }
         .auto-style13 {
             width: 323px;
@@ -70,61 +71,86 @@
             font-family: "Comic Sans MS";
             text-align: center;
         }
+        .auto-style24 {
+            width: 62px;
+            height: 42px;
+        }
+        .auto-style25 {
+            height: 42px;
+        }
+        .auto-style26 {
+            width: 55px;
+            height: 2px;
+        }
+        .auto-style27 {
+            height: 5px;
+        }
+        .auto-style28 {
+            height: 48px;
+        }
+        .auto-style29 {
+            font-family: "Comic Sans MS";
+            height: 34px;
+        }
+        .auto-style30 {
+            height: 40px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server" enctype="multipart/form-data">
-        <div>
             <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
                 <asp:View ID="View3" runat="server">
-                    <table class="auto-style1">
-                        <tr>
-                            <td class="auto-style5">
-                                <asp:ImageButton ID="IBEPagina" runat="server" Height="52px" ImageUrl="~/Imagenes/editar-texto.png" OnClick="IBEPagina_Click" Width="53px" />
-                            </td>
-                            <td class="auto-style6">
-                                <asp:Label ID="LabelEPagina" runat="server" Font-Names="Comic Sans MS" Text="Editar Pagina"></asp:Label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style5">
-                                <asp:ImageButton ID="IBCPublioEve" runat="server" Height="52px" ImageUrl="~/Imagenes/agregar.png" OnClick="IBCPublioEve_Click" Width="53px" />
-                            </td>
-                            <td class="auto-style6">
-                                <asp:Label ID="LabelCpubli" runat="server" Font-Names="Comic Sans MS" Text="Crear Publicacion o Evento"></asp:Label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style3">
-                                <asp:ImageButton ID="IBEEvePubli" runat="server" Height="52px" ImageUrl="~/Imagenes/editar.png" OnClick="IBEEvePubli_Click" Width="53px" />
-                            </td>
-                            <td class="auto-style7">
-                                <asp:Label ID="LabelEEven" runat="server" Font-Names="Comic Sans MS" Text="Editar Eventos o Publicaciones"></asp:Label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style3">
-                                <asp:ImageButton ID="IBVer" runat="server" Height="52px" ImageUrl="~/Imagenes/vistas-de-pagina.png" OnClick="IBVer_Click" Width="51px" />
-                            </td>
-                            <td class="auto-style2">
-                                <asp:Label ID="Label58" runat="server" Font-Names="Comic Sans MS" Text="Ver Pagina"></asp:Label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style3">
-                                <asp:ImageButton ID="IBRegresar" runat="server" Height="52px" ImageUrl="~/Imagenes/cerrar-sesion.png" OnClick="IBRegresar_Click" Width="51px" />
-                            </td>
-                            <td class="auto-style2">
-                                <asp:Label ID="Label4" runat="server" Font-Names="Comic Sans MS" Text="Regresar"></asp:Label>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="principal" id="Principal" >
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="auto-style5">
+                                    <asp:ImageButton ID="IBEPagina" runat="server" Height="52px" ImageUrl="~/Imagenes/editar-codigo.png" OnClick="IBEPagina_Click" Width="53px" />
+                                </td>
+                                <td class="auto-style6">
+                                    <asp:Label ID="LabelEPagina" runat="server" Font-Names="Comic Sans MS" Text="Editar Pagina"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style5">
+                                    <asp:ImageButton ID="IBCPublioEve" runat="server" Height="52px" ImageUrl="~/Imagenes/mas.png" OnClick="IBCPublioEve_Click" Width="53px" />
+                                </td>
+                                <td class="auto-style6">
+                                    <asp:Label ID="LabelCpubli" runat="server" Font-Names="Comic Sans MS" Text="Crear Publicacion o Evento"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style5">
+                                    <asp:ImageButton ID="IBEEvePubli" runat="server" Height="52px" ImageUrl="~/Imagenes/editar.png" OnClick="IBEEvePubli_Click" Width="53px" />
+                                </td>
+                                <td class="auto-style6">
+                                    <asp:Label ID="LabelEEven" runat="server" Font-Names="Comic Sans MS" Text="Editar Eventos o Publicaciones"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style5">
+                                    <asp:ImageButton ID="IBVer" runat="server" Height="52px" ImageUrl="~/Imagenes/ver.png" OnClick="IBVer_Click" Width="51px" />
+                                </td>
+                                <td class="auto-style6">
+                                    <asp:Label ID="Label58" runat="server" Font-Names="Comic Sans MS" Text="Ver Pagina"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style5">
+                                    <asp:ImageButton ID="IBRegresar" runat="server" Height="52px" ImageUrl="~/Imagenes/regreso.png" OnClick="IBRegresar_Click" Width="51px" />
+                                </td>
+                                <td class="auto-style6">
+                                    <asp:Label ID="Label4" runat="server" Font-Names="Comic Sans MS" Text="Regresar"></asp:Label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </asp:View>
                 <asp:View ID="View1" runat="server" >
-                    <table class="auto-style1">
+                    <table class="auto-styleP">
                         <tr>
                             <td class="auto-style3">
-                                <asp:ImageButton ID="IBRegresar0" runat="server" Height="52px" ImageUrl="~/Imagenes/cerrar-sesion.png" OnClick="IBRegresar1_Click" Width="51px" />
+                                <asp:ImageButton ID="IBRegresar0" runat="server" Height="52px" ImageUrl="~/Imagenes/regreso.png" OnClick="IBRegresar1_Click" Width="51px" />
                                 <asp:Label ID="Label48" runat="server" Font-Names="Comic Sans MS" Text="Regresar"></asp:Label>
                             </td>
                             <td class="auto-style2">
@@ -198,27 +224,27 @@
                     <table class="auto-style1">
                         <tr>
                             <td class="auto-style19" colspan="2">
-                                <p class="text">
-                                    <asp:ImageButton ID="IBRegresar1" runat="server" Height="52px" ImageUrl="~/Imagenes/cerrar-sesion.png" OnClick="IBRegresar1_Click" Width="51px" />
+                                <p class="auto-style28">
+                                    <asp:ImageButton ID="IBRegresar1" runat="server" Height="52px" ImageUrl="~/Imagenes/regreso.png" OnClick="IBRegresar1_Click" Width="51px" />
                                     <asp:Label ID="Label49" runat="server" Font-Names="Comic Sans MS" Text="Regresar"></asp:Label>
                                 </p>
-                                <h1 class="text">CREAR PUBLICACION</h1>
+                                <h1 class="auto-style18">CREAR PUBLICACION</h1>
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style21">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <td class="auto-style24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <asp:Label ID="Label41" runat="server" CssClass="Todo" Font-Names="Comic Sans MS" Text="Titulo:"></asp:Label>
                             </td>
-                            <td>
+                            <td class="auto-style25">
                                 <asp:TextBox ID="TbTituloP" runat="server" CssClass="texbox" Font-Names="Comic Sans MS"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style21">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <td class="auto-style26">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <asp:Label ID="Label42" runat="server" CssClass="Todo" Font-Names="Comic Sans MS" Text="Contenido:"></asp:Label>
                             </td>
-                            <td>
-                                <asp:TextBox ID="TbContP" runat="server" CssClass="auto-style17" Font-Names="Comic Sans MS" Height="72px" TextMode="MultiLine" Width="404px"></asp:TextBox>
+                            <td class="auto-style27">
+                                <asp:TextBox ID="TbContP" runat="server" CssClass="auto-style17" Font-Names="Comic Sans MS" Height="51px" TextMode="MultiLine" Width="404px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
@@ -235,17 +261,11 @@
                         </tr>
                         <tr>
                             <td class="auto-style21">
-                                <table class="auto-style1">
+                                <table class="auto-styleP">
                                     <tr>
                                         <td class="auto-style18" colspan="2">
                                             <h1 class="text">CREAR EVENTO</h1>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="auto-style13">
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
                                     </tr>
                                     <tr>
                                         <td class="auto-style13">
@@ -291,12 +311,12 @@
                 <asp:View ID="View4" runat="server">
                     <table class="auto-style1">
                         <tr>
-                            <td class="auto-style19" colspan="3">
+                            <td class="auto-style30" colspan="3">
                                 <p class="text">
-                                    <asp:ImageButton ID="IBRegresar3" runat="server" Height="52px" ImageUrl="~/Imagenes/cerrar-sesion.png" OnClick="IBRegresar1_Click" Width="51px" />
+                                    <asp:ImageButton ID="IBRegresar3" runat="server" Height="52px" ImageUrl="~/Imagenes/regreso.png" OnClick="IBRegresar1_Click" Width="51px" />
                                     <asp:Label ID="Label51" runat="server" Font-Names="Comic Sans MS" Text="Regresar"></asp:Label>
                                 </p>
-                                <h1 class="text">EDITAR PUBLICACION</h1>
+                                <h1 class="auto-style29" >EDITAR PUBLICACION</h1>
                             </td>
                         </tr>
                         <tr>
@@ -320,7 +340,7 @@
                                 <asp:Label ID="Labelid" runat="server" CssClass="Todo" Font-Names="Comic Sans MS" Text="Fecha" Visible="False"></asp:Label>
                             </td>
                             <td colspan="2">
-                                <asp:TextBox ID="TbContP0" runat="server" CssClass="auto-style17" Font-Names="Comic Sans MS" Height="72px" TextMode="MultiLine" Width="404px"></asp:TextBox>
+                                <asp:TextBox ID="TbContP0" runat="server" CssClass="auto-style17" Font-Names="Comic Sans MS" Height="60px" TextMode="MultiLine" Width="404px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
@@ -335,7 +355,7 @@
                         </tr>
                         <tr>
                             <td class="auto-style21">
-                                <table class="auto-style1">
+                                <table class="auto-styleP">
                                     <tr>
                                         <td class="auto-style18" colspan="3">
                                             <h1 class="text">EDITAR EVENTO</h1>
@@ -375,7 +395,7 @@
                                             <asp:Label ID="Label57" runat="server" CssClass="Todo" Font-Names="Comic Sans MS" Text="Se realizara:"></asp:Label>
                                         </td>
                                         <td colspan="2">
-                                            <asp:TextBox ID="TbContEvento0" runat="server" CssClass="auto-style17" Font-Names="Comic Sans MS" Height="71px" TextMode="MultiLine" Width="404px"></asp:TextBox>
+                                            <asp:TextBox ID="TbContEvento0" runat="server" CssClass="auto-style17" Font-Names="Comic Sans MS" Height="65px" TextMode="MultiLine" Width="404px"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -395,7 +415,6 @@
                         </tr>
                     </table>
                     <br />
-                    &nbsp;
                 </asp:View>
             </asp:MultiView>
         </div>

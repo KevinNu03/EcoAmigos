@@ -1,4 +1,14 @@
-﻿.wrapper {
+﻿html {
+    overflow: hidden;
+}
+
+body {
+    background-image: url('../Imagenes/grupo.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -7,13 +17,10 @@
     min-height: 100%;
     padding: 20px;
     height: 695px;
-    background-image: url('../Imagenes/Rga.jpg');
-    background-size: 100% 100%;
     margin-right: 0px;
     margin-bottom: 3px;
 }
 
-}
 
 .formcontent {
     -webkit-border-radius: 10px 10px 10px 10px;

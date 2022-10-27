@@ -11,7 +11,7 @@ namespace EcoAmigios.Forms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session["Id_Usuario"] = null;
         }
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)

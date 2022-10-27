@@ -1,4 +1,14 @@
-﻿.wrapper {
+﻿html {
+    overflow: hidden;
+}
+
+body {
+    background-image: url('../Imagenes/grupo.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -6,8 +16,7 @@
     width: 100%;
     min-height: 100%;
     padding: 20px;
-    height: 690px;
-    background-image: url('../Imagenes/Rga.jpg');
+    height: 695px;
     background-size: 100% 100%;
     margin-right: 0px;
     margin-bottom: 3px;

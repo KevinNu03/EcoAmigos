@@ -56,7 +56,7 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style4">
-            <asp:ImageButton ID="BtnRegresar" runat="server" Height="53px" ImageUrl="~/Imagenes/Regresar.png" Width="61px" OnClick="BtnRegresar_Click" />
+            <asp:ImageButton ID="BtnRegresar" runat="server" Height="53px" ImageUrl="~/Imagenes/regreso.png" Width="61px" OnClick="BtnRegresar_Click" />
                     </td>
                     <td class="auto-style4">
                         &nbsp;</td>
@@ -65,7 +65,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style4">
-            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" Font-Names="Comic Sans MS" ForeColor="White" Text="REGRESAR"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" Font-Names="Comic Sans MS" ForeColor="Black" Text="REGRESAR"></asp:Label>
                     </td>
                     <td class="auto-style4">
                         &nbsp;</td>

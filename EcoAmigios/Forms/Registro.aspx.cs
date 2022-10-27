@@ -1,5 +1,4 @@
 ﻿using EcoAmigios.Class;
-using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -66,6 +65,11 @@ namespace EcoAmigios.Forms
             {
                 ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Seleccione el tipo de documento!!');", true);
             }
+        }
+
+        protected void ButtonRegresar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login_Usu.aspx");
         }
     }
 }

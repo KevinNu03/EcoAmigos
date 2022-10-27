@@ -12,34 +12,31 @@
     <title>Registro</title>
     <style type="text/css">
         #formulario_login {
-            width: 374px;
-            height: 231px;
-            margin-left: 66px;
+            width: 40%;
+            height: 45%;
+            margin-left: 60%;
             margin-right: 0px;
             margin-top: 0px;
             margin-bottom: 0px;
         }
     </style>
 </head>
-<body class ="hg-ligt">
-        <div class="wrapper">
-                <div class="formcontent">
-     </div>           
-                      <form id="formulario_login" runat="server">
-                          <div class="form-control">
-                             
-               <div>
-                              
-               <asp:Label ID="lbCorreo" runat="server" Text="Correo del Grupo Ambiental:" ></asp:Label>
-               <asp:TextBox ID="TbGCorreo" CssClass="form-control" runat="server" placeholder="Correo del Usuario" TextMode="Email"></asp:TextBox>
-                   <asp:Button ID="BtnSiguiente" cssclass =" btn btn-primary btn-dark" runat="server" Text="Siguiente" OnClick="BtnSiguiente_Click" />
-                   <br />
-                   <asp:Button ID="btnRegresar" cssclass =" btn btn-primary btn-dark" runat="server" Text="Regresar" OnClick="btnRegresar_Click" />
-                   <asp:Label ID="LabelCodigo" runat="server" Visible="False"></asp:Label>
+<body class="hg-ligt">
+    <div class="wrapper">
+        <div class="formcontent">
+        </div>
+        <form id="formulario_login" runat="server">
+            <div class="form-control">
+                <div>
+                    <asp:Label ID="lbCorreo" runat="server" Text="Correo del Grupo Ambiental:"></asp:Label>
+                    <asp:TextBox ID="TbGCorreo" CssClass="form-control" runat="server" placeholder="Correo del Usuario" TextMode="Email"></asp:TextBox>
+                    <asp:Button ID="BtnSiguiente" CssClass=" btn btn-primary btn-dark" runat="server" Text="Siguiente" OnClick="BtnSiguiente_Click" />
+                    <br />
+                    <asp:Button ID="btnRegresar" CssClass=" btn btn-primary btn-dark" runat="server" Text="Regresar" OnClick="btnRegresar_Click" />
+                    <asp:Label ID="LabelCodigo" runat="server" Visible="False"></asp:Label>
+                </div>
             </div>
-
-         </div>
-       </form>          
-   </div>
- </body>
+        </form>
+    </div>
+</body>
 </html>

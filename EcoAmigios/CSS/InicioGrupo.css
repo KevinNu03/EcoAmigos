@@ -1,0 +1,24 @@
+﻿body {
+    background: #dd3e54; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6be585, #8360c3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6be585, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100% !important;
+}
+
+.botonP {
+    border-radius: 15px;
+    background: #808080;
+   
+}
+
+.botonP:hover {
+    background-color: mediumspringgreen;
+}
+
+.divMenu {
+    width: 20%;
+    height: 100%;
+    background-color: #8d938b;
+    border-radius: 8px;
+    color: white;
+}

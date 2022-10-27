@@ -12,40 +12,31 @@
     <title>Registro</title>
     <style type="text/css">
        #formulario_login {
-            width: 374px;
-            height: 231px;
-            margin-left: 66px;
+            width: 40%;
+            height: 45%;
+            margin-left: 60%;
             margin-right: 0px;
             margin-top: 0px;
             margin-bottom: 0px;
         }
     </style>
 </head>
-<body class ="hg-ligt">
-        <div class="wrapper">
-                <div class="formcontent">
-     </div>           
-                      <form id="formulario_login" runat="server">
-                          <div class="form-control">
-                              
-               <div>
-                              
-               <asp:Label ID="lbContrasena" runat="server" Text="Contraseña:" ></asp:Label>
-               <asp:TextBox ID="TbGContrasena" CssClass="form-control" runat="server" placeholder="Contraseña" TextMode="Password"></asp:TextBox>
-
-               <asp:Label ID="lbVerificacionC" runat="server" Text="Verificacion de Contraseña:" ></asp:Label>
-               <asp:TextBox ID="TbGVerificacionC" CssClass="form-control" runat="server" placeholder="Verificacion de Contraseña" TextMode="Password"></asp:TextBox>
+<body class="hg-ligt">
+    <div class="wrapper">
+        <form id="formulario_login" runat="server">
+            <div class="form-control">
+                <div>
+                    <asp:Label ID="lbContrasena" runat="server" Text="Contraseña:"></asp:Label>
+                    <asp:TextBox ID="TbGContrasena" CssClass="form-control" runat="server" placeholder="Contraseña" TextMode="Password"></asp:TextBox>
+                    <asp:Label ID="lbVerificacionC" runat="server" Text="Verificacion de Contraseña:"></asp:Label>
+                    <asp:TextBox ID="TbGVerificacionC" CssClass="form-control" runat="server" placeholder="Verificacion de Contraseña" TextMode="Password"></asp:TextBox>
+                </div>
+                <div class="row">
+                    <asp:Button ID="BtnSiguiente" CssClass=" btn btn-primary btn-dark" runat="server" Text="Siguiente" OnClick="BtnSiguiente_Click" />
+                    <asp:Button ID="BtnRegresar" CssClass=" btn btn-primary btn-dark" runat="server" Text="Regresar" OnClick="BtnRegresar_Click" />
+                </div>
             </div>
-            <div class="row">
-
-               <asp:Button ID="BtnSiguiente" cssclass =" btn btn-primary btn-dark" runat="server" Text="Siguiente" OnClick="BtnSiguiente_Click" />
-               <asp:Button ID="BtnRegresar" cssclass =" btn btn-primary btn-dark" runat="server" Text="Regresar" OnClick="BtnRegresar_Click" />
-               
-            
-            </div>
-
-         </div>
-       </form>          
-   </div>
- </body>
+        </form>
+    </div>
+</body>
 </html>

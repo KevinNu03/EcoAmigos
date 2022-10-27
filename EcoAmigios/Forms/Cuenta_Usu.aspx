@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    
+    <link href="../CSS/CuentaUsuario.css" rel="stylesheet" />
     <title>Datos Personales</title>
     <style type="text/css">
         .auto-style1 {
@@ -35,26 +35,30 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <link href="../CSS/Cuenta.css" rel="stylesheet" />
-        <div1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:ImageButton ID="Regresar" runat="server" Height="50px" Width="60px" CssClass="BotonMenu" ImageUrl="~/Imagenes/Regresar.png" OnClick="Regresar_Click" />
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+        <form id="form1" runat="server">
+            <link href="../CSS/Cuenta.css" rel="stylesheet" />
+            <div1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:ImageButton ID="Regresar" runat="server" Height="50px" Width="60px" CssClass="BotonMenu" ImageUrl="~/Imagenes/regreso.png" OnClick="Regresar_Click" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-            <asp:ImageButton ID="Actualizar" runat="server" Height="50px" Width="60px" CssClass="BotonMenu" ImageUrl="~/Imagenes/Actualizar.png" OnClick="Actualizar_Click" />
+            <asp:ImageButton ID="Actualizar" runat="server" Height="50px" Width="60px" CssClass="BotonMenu" ImageUrl="~/Imagenes/informacion-personal.png" OnClick="Actualizar_Click" />
             <font color="#762C6" size="70px">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<asp:ImageButton ID="C_contraseña" runat="server" Height="50px" Width="60px" CssClass="BotonMenu" ImageUrl="~/Imagenes/Contraseña.png" OnClick="C_contraseña_Click"/>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ECO_AMIGOS</font><br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </font><br />
+            
             <asp:Label ID="Label15" runat="server" Text="Regresar" Font-Names="Comic Sans MS"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label13" runat="server" Text="Mostrar Datos" Font-Names="Comic Sans MS"></asp:Label>
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label14" runat="server" Text="Cambiar contraseña" Font-Names="Comic Sans MS"></asp:Label>
+            <asp:Label ID="Label14" runat="server" Text="       Cambiar contraseña" Font-Names="Comic Sans MS"></asp:Label>
+            <asp:Label ID="Label10" runat="server" Text="EcoAmigos" Font-Names="Comic Sans MS" CssClass="Titulo"></asp:Label>
 
         </div1>
-        <div class="div">
+            <div class="div">
                 <asp:MultiView ID="MultiView1" runat="server">
-                
+
                     <asp:View ID="View2" runat="server">
                         <div>
                             &nbsp;&nbsp;<table class="auto-style1">
@@ -127,16 +131,13 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        &nbsp;</td>
+                                    <td>&nbsp;</td>
                                     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        </td>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        &nbsp;</td>
-                                    <td>
-                                        &nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
                                 </tr>
                             </table>
                         </div>
@@ -151,67 +152,39 @@
                             </tr>
                         </table>
                     </asp:View>
-                
-                <asp:View ID="View3" runat="server">
-                    <table class="auto-style10">
-                        <tr>
-                            <td class="auto-style4">&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style4">&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style4">&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style4">&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style4">&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style4">&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style4">&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style4">
-                                &nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style4"><asp:Label ID="Label1" runat="server" CssClass="Todo" Font-Names="Comic Sans MS" Text="Contraseña Antigua"></asp:Label></td>
-                            <td><asp:TextBox ID="TbContraseñaA" runat="server" CssClass="texbox" Font-Names="Comic Sans MS" TextMode="Password"></asp:TextBox></td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style4"><asp:Label ID="Label2" runat="server" CssClass="Todo" Font-Names="Comic Sans MS" Text="Nueva Contraseña"></asp:Label></td>
-                            <td><asp:TextBox ID="TbContraseñaN" runat="server" CssClass="texbox" Font-Names="Comic Sans MS" TextMode="Password"></asp:TextBox></td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style4">
-                                <asp:Label ID="Label9" runat="server" CssClass="Todo" Font-Names="Comic Sans MS" Text="Confirmar Contraseña"></asp:Label>
-                            </td>
-                            <td>
-                                <asp:TextBox ID="TbContraseñaR" runat="server" CssClass="texbox" Font-Names="Comic Sans MS" TextMode="Password"></asp:TextBox>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style4">
-                                <asp:Button ID="btnCambiar" runat="server" CssClass="boton"  Text="CAMBIAR CONTRASEÑA" OnClick="btnCambiar_Click" />
-                            </td>
-                        </tr>
-                    </table>
-                </asp:View>
-            </asp:MultiView>
-         </div>
-    </form>
+
+                    <asp:View ID="View3" runat="server">
+                        <table class="auto-style10">
+                            <tr>
+                                <td class="auto-style4">
+                                    <asp:Label ID="Label1" runat="server" CssClass="Todo" Font-Names="Comic Sans MS" Text="Contraseña Antigua"></asp:Label></td>
+                                <td>
+                                    <asp:TextBox ID="TbContraseñaA" runat="server" CssClass="texbox" Font-Names="Comic Sans MS" TextMode="Password"></asp:TextBox></td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style4">
+                                    <asp:Label ID="Label2" runat="server" CssClass="Todo" Font-Names="Comic Sans MS" Text="Nueva Contraseña"></asp:Label></td>
+                                <td>
+                                    <asp:TextBox ID="TbContraseñaN" runat="server" CssClass="texbox" Font-Names="Comic Sans MS" TextMode="Password"></asp:TextBox></td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style4">
+                                    <asp:Label ID="Label9" runat="server" CssClass="Todo" Font-Names="Comic Sans MS" Text="Confirmar Contraseña"></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:TextBox ID="TbContraseñaR" runat="server" CssClass="texbox" Font-Names="Comic Sans MS" TextMode="Password"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style4">
+                                    <asp:Button ID="btnCambiar" runat="server" CssClass="boton" Text="CAMBIAR CONTRASEÑA" OnClick="btnCambiar_Click" />
+                                </td>
+                            </tr>
+                        </table>
+                    </asp:View>
+                </asp:MultiView>
+            </div>
+        </form>
+    </div>
     </body>
 </html>
