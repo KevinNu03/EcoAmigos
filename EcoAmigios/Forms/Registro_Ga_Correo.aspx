@@ -30,8 +30,12 @@
                 <div>
                     <asp:Label ID="lbCorreo" runat="server" Text="Correo del Grupo Ambiental:"></asp:Label>
                     <asp:TextBox ID="TbGCorreo" CssClass="form-control" runat="server" placeholder="Correo del Usuario" TextMode="Email"></asp:TextBox>
-                    <asp:Button ID="BtnSiguiente" CssClass=" btn btn-primary btn-dark" runat="server" Text="Siguiente" OnClick="BtnSiguiente_Click" />
-                    <br />
+                     <asp:Label ID="Label1" runat="server" Text="Codigo de confirmacion:"></asp:Label>
+                    <asp:TextBox ID="TbConfi" CssClass="form-control" runat="server" placeholder="Codigo de Confirmacion" TextMode="Number"></asp:TextBox>
+                    <asp:Button ID="BtEnviar" CssClass=" btn btn-primary btn-dark" runat="server" Text="Enviar Codigo" OnClick="Btnenvi_Click" />
+                    <asp:Button ID="BtConfi" CssClass=" btn btn-primary btn-dark" runat="server" Text="Confirmar Codigo" OnClick="BtnConfi_Click" Visible="False" />
+                    <asp:Button ID="BtnSiguiente" CssClass=" btn btn-primary btn-dark" runat="server" Text="Siguiente" OnClick="BtnSiguiente_Click" Enabled="False" />
+                    
                     <asp:Button ID="btnRegresar" CssClass=" btn btn-primary btn-dark" runat="server" Text="Regresar" OnClick="btnRegresar_Click" />
                     <asp:Label ID="LabelCodigo" runat="server" Visible="False"></asp:Label>
                 </div>

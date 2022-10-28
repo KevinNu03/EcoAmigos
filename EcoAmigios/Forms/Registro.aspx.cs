@@ -27,7 +27,7 @@ namespace EcoAmigios.Forms
             {
                 if (TbIdentificacion.Text != "" || TbNombre.Text != "" || TbApellido.Text != "" || TbTelefono.Text != "")
                 {
-                    cmd = new SqlCommand("Select * From Usuario Where Documento = '" + TbIdentificacion.Text + "'", conn);
+                    cmd = new SqlCommand("Select * From Usuario Where Documento = '" + Encriptar(TbIdentificacion.Text) + "'", conn);
                     conn.Open();
                     try
                     {
@@ -70,6 +70,14 @@ namespace EcoAmigios.Forms
         protected void ButtonRegresar_Click(object sender, EventArgs e)
         {
             Response.Redirect("Login_Usu.aspx");
+        }
+
+        public static string Encriptar(string _cadenaAencriptar)
+        {
+            string result = string.Empty;
+            byte[] encryted = System.Text.Encoding.Unicode.GetBytes(_cadenaAencriptar);
+            result = Convert.ToBase64String(encryted);
+            return result;
         }
     }
 }

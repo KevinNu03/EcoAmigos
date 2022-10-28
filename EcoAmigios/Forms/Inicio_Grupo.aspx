@@ -72,7 +72,7 @@
                 </asp:View>
             </asp:MultiView>
             
-            <asp:SqlDataSource ID="SqlPagina" runat="server" ConnectionString="<%$ ConnectionStrings:EcoAmigos %>" SelectCommand="SELECT * FROM [Pagina] WHERE ([Identificacion] = @Identificacion)">
+            <asp:SqlDataSource ID="SqlPagina" runat="server" ConnectionString="<%$ ConnectionStrings:EcoAmigos %>" SelectCommand="SELECT [Tipo_Pagina], [Nombre_Pagina], [Img_pag] FROM [Pagina] WHERE ([Identificacion] = @Identificacion)">
                 <SelectParameters>
                     <asp:SessionParameter Name="Identificacion" SessionField="Id_Grupo" Type="Int32" />
                 </SelectParameters>

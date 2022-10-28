@@ -20,12 +20,19 @@ namespace EcoAmigios.Forms
         {
             Session["Id_Usuario"] = null;
         }
+        public static string Encriptar(string _cadenaAencriptar)
+        {
+            string result = string.Empty;
+            byte[] encryted = System.Text.Encoding.Unicode.GetBytes(_cadenaAencriptar);
+            result = Convert.ToBase64String(encryted);
+            return result;
+        }
 
         protected void BtnIngresar_Click(object sender, EventArgs e)
         {
             if (TbUsuario.Text != "" && TbContraseña.Text != "")
             {
-                cmd = new SqlCommand("SELECT * FROM Usuario WHERE Usuario = '" + TbUsuario.Text + "'", conn);
+                cmd = new SqlCommand("SELECT * FROM Usuario WHERE Usuario = '" + Encriptar(TbUsuario.Text.ToUpper()) + "'", conn);
                 conn.Open();
 
                 try

@@ -58,6 +58,15 @@ namespace EcoAmigios.Forms {
         protected global::System.Web.UI.WebControls.TextBox TbGVerificacionC;
         
         /// <summary>
+        /// Control CBDatos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CBDatos;
+        
+        /// <summary>
         /// Control BtnSiguiente.
         /// </summary>
         /// <remarks>

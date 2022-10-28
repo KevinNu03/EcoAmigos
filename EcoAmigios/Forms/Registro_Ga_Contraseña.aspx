@@ -27,13 +27,16 @@
             <div class="form-control">
                 <div>
                     <asp:Label ID="lbContrasena" runat="server" Text="Contraseña:"></asp:Label>
-                    <asp:TextBox ID="TbGContrasena" CssClass="form-control" runat="server" placeholder="Contraseña" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="TbGContrasena" CssClass="form-control" runat="server" placeholder="Contraseña" TextMode="Password" MaxLength="10"></asp:TextBox>
                     <asp:Label ID="lbVerificacionC" runat="server" Text="Verificacion de Contraseña:"></asp:Label>
-                    <asp:TextBox ID="TbGVerificacionC" CssClass="form-control" runat="server" placeholder="Verificacion de Contraseña" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="TbGVerificacionC" CssClass="form-control" runat="server" placeholder="Verificacion de Contraseña" TextMode="Password" MaxLength="10"></asp:TextBox>
                 </div>
+                <asp:CheckBox ID="CBDatos" runat="server" Text="    Tratamiento de datos personales" />
                 <div class="row">
                     <asp:Button ID="BtnSiguiente" CssClass=" btn btn-primary btn-dark" runat="server" Text="Siguiente" OnClick="BtnSiguiente_Click" />
                     <asp:Button ID="BtnRegresar" CssClass=" btn btn-primary btn-dark" runat="server" Text="Regresar" OnClick="BtnRegresar_Click" />
+                    <br>
+                    
                 </div>
             </div>
         </form>

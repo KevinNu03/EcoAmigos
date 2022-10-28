@@ -31,9 +31,14 @@
                     <asp:Label ID="lbCorreo" runat="server" Text="Correo del Usuario:"></asp:Label>
                     <asp:TextBox ID="TbCorreo" CssClass="form-control" runat="server" placeholder="Correo del Usuario" TextMode="Email"></asp:TextBox>
 
+                    <asp:Label ID="LabelConfir" runat="server" Text="Confirmacion:"></asp:Label>
+                    <asp:TextBox ID="TbConfir" CssClass="form-control" runat="server" placeholder="Codigo de Confirmacion" TextMode="Number"></asp:TextBox>
+
                 </div>
                 <div class="row">
-                    <asp:Button ID="BtSiguiente" CssClass=" btn btn-primary btn-dark" runat="server" Text="Siguiente" OnClick="BtSiguiente_Click" />
+                    <asp:Button ID="Btenvi" CssClass=" btn btn-primary btn-dark" runat="server" Text="Enviar Codigo" OnClick="Btenvi_Click" />
+                    <asp:Button ID="Btverifi" CssClass=" btn btn-primary btn-dark" runat="server" Text="Confirmar Codigo" OnClick="Btverifi_Click" Visible="False" />
+                    <asp:Button ID="BtSiguiente" CssClass=" btn btn-primary btn-dark" runat="server" Text="Siguiente" OnClick="BtSiguiente_Click" Enabled="False" />
                     <asp:Button ID="BtRegresar" CssClass=" btn btn-primary btn-dark" runat="server" Text="Regresar" OnClick="BtRegresar_Click" />
 
                 </div>

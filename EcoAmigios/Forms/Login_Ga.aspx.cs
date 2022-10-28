@@ -25,12 +25,26 @@ namespace EcoAmigios.Forms
         {
             Response.Redirect("Registro_Ga.aspx");
         }
+        public static string Encriptar(string _cadenaAencriptar)
+        {
+            string result = string.Empty;
+            byte[] encryted = System.Text.Encoding.Unicode.GetBytes(_cadenaAencriptar);
+            result = Convert.ToBase64String(encryted);
+            return result;
+        }
+        public static string DesEncriptar(string _cadenaAdesencriptar)
+        {
+            string result = string.Empty;
+            byte[] decryted = Convert.FromBase64String(_cadenaAdesencriptar);
+            result = System.Text.Encoding.Unicode.GetString(decryted);
+            return result;
+        }
 
         protected void BtnIngresar_Click(object sender, EventArgs e)
         {
             if(TbGUsuario.Text != "" || TbGContraseña.Text != "")
             {
-                cmd = new SqlCommand("Select * From GruAmbiental Where Nombre_Gru = '" + TbGUsuario.Text + "'", conn);
+                cmd = new SqlCommand("Select * From GruAmbiental Where Nombre_Gru = '" + Encriptar(TbGUsuario.Text) + "'", conn);
                 conn.Open();
 
                 try
@@ -41,7 +55,7 @@ namespace EcoAmigios.Forms
                         string contraseña = GetSHA256(TbGContraseña.Text);
                         if (dr["Contraseña"].ToString() == contraseña)
                         {
-                            Session["Id_Grupo"] = dr["Identificacion"].ToString();
+                            Session["Id_Grupo"] = DesEncriptar(dr["Identificacion"].ToString());
                             Response.Redirect("Inicio_Grupo.aspx");
                         }
                         else
@@ -75,7 +89,7 @@ namespace EcoAmigios.Forms
             for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
             return sb.ToString();
         }
-
+        
         protected void BtnContraseña_Click(object sender, EventArgs e)
         {
 

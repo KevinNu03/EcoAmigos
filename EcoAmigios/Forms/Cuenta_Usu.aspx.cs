@@ -30,29 +30,45 @@ namespace EcoAmigios.Forms
         {
             MultiView1.ActiveViewIndex = 1;
         }
-
+        public static string Encriptar(string _cadenaAencriptar)
+        {
+            string result = string.Empty;
+            byte[] encryted = System.Text.Encoding.Unicode.GetBytes(_cadenaAencriptar);
+            result = Convert.ToBase64String(encryted);
+            return result;
+        }
+        public static string DesEncriptar(string _cadenaAdesencriptar)
+        {
+            string result = string.Empty;
+            byte[] decryted = Convert.FromBase64String(_cadenaAdesencriptar);
+            result = System.Text.Encoding.Unicode.GetString(decryted);
+            return result;
+        }
         protected void Actualizar_Click(object sender, ImageClickEventArgs e)
         {
+            MultiView1.ActiveViewIndex = 0;
             conn.Open();
-            cmd = new SqlCommand("SELECT * FROM Usuario WHERE Documento = " + Session["Id_Usuario"].ToString() + "",conn);
+            cmd = new SqlCommand("SELECT * FROM Usuario WHERE Documento = '" + Session["Id_Usuario"] + "'",conn);
             try
             {
                 dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
+
                     ListDoc.Text = dr["Tipo_Documento"].ToString();
-                    TbDocumento.Text = dr["Documento"].ToString();
-                    TbNombres.Text = dr["Nombres"].ToString();
-                    TbApellido.Text = dr["Apellidos"].ToString();
-                    TbCorreo.Text = dr["Correo"].ToString();
-                    TbTelefono.Text = dr["Telefono"].ToString();
-                    TbUsuario.Text = dr["Usuario"].ToString();
-                    MultiView1.ActiveViewIndex = 0;
+                    TbDocumento.Text = DesEncriptar(Session["Id_Usuario"].ToString());
+                    TbNombres.Text = DesEncriptar(dr["Nombres"].ToString());
+                    TbApellido.Text = DesEncriptar(dr["Apellidos"].ToString());
+                    TbCorreo.Text = DesEncriptar(dr["Correo"].ToString());
+                    TbTelefono.Text = DesEncriptar(dr["Telefono"].ToString());
+                    TbUsuario.Text = DesEncriptar(dr["Usuario"].ToString());
+                    
                 }
             }
             catch(Exception ex)
             {
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('" + ex + "')", true);
+               
             }
             finally
             {
@@ -79,7 +95,7 @@ namespace EcoAmigios.Forms
                 if (TbDocumento.Text != "" || TbNombres.Text != "" || TbApellido.Text != "" || TbCorreo.Text != "" || TbUsuario.Text != "" )
                 {
                     conn.Open();
-                    cmd = new SqlCommand("SELECT * FROM Usuario WHERE Usuario = '" + TbUsuario.Text + "' and Documento = " + Session["Id_Usuario"].ToString() + "", conn);
+                    cmd = new SqlCommand("SELECT * FROM Usuario WHERE Usuario = '" + Encriptar(TbUsuario.Text) + "' and Documento = '" + Session["Id_Usuario"].ToString() + "'", conn);
                     try
                     {
                         dr = cmd.ExecuteReader();
@@ -87,7 +103,7 @@ namespace EcoAmigios.Forms
                         {
                             conn.Close();
                             conn.Open();
-                            cmd = new SqlCommand("UPDATE Usuario SET Tipo_Documento = '" + ListDoc.Text + "', Nombres = '" + TbNombres.Text + "', Apellidos = '" + TbApellido.Text + "', Correo = '" + TbCorreo.Text + "', Telefono = " + int.Parse(TbTelefono.Text) + ", Usuario = '" + TbUsuario.Text + "' WHERE Documento = " + Session["Id_Usuario"].ToString() + "", conn);
+                            cmd = new SqlCommand("UPDATE Usuario SET Tipo_Documento = '" + ListDoc.Text + "', Nombres = '" + Encriptar(TbNombres.Text) + "', Apellidos = '" + Encriptar(TbApellido.Text) + "', Correo = '" + Encriptar(TbCorreo.Text) + "', Telefono = '" + Encriptar(TbTelefono.Text) + "', Usuario = '" + Encriptar(TbUsuario.Text) + "' WHERE Documento = '" + Session["Id_Usuario"].ToString() + "'", conn);
                             try
                             {
                                 cmd.ExecuteReader();
@@ -97,6 +113,7 @@ namespace EcoAmigios.Forms
                             catch (Exception ex)
                             {
                                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('" + ex + "')", true);
+                                Label15.Text = "" + ex;
                             }
                             finally
                             {
@@ -111,6 +128,7 @@ namespace EcoAmigios.Forms
                     catch(Exception ex)
                     {
                         ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('" + ex + "')", true);
+                        Label15.Text = "" + ex;
                     }
                     finally
                     {
@@ -132,59 +150,60 @@ namespace EcoAmigios.Forms
 
         protected void btnCambiar_Click(object sender, EventArgs e)
         {
-            string contraseña = GetSHA256(TbContraseñaA.Text);
-            conn.Open();
-            cmd = new SqlCommand("SELECT * FROM Usuario WHERE Documento = 123121",conn);
-            try
-            {
-                dr = cmd.ExecuteReader();
-                if (dr.Read())
+                string contraseña = GetSHA256(TbContraseñaA.Text);
+                conn.Open();
+                cmd = new SqlCommand("SELECT * FROM Usuario WHERE Documento = '" + Session["Id_Usuario"].ToString() + "'", conn);
+                try
                 {
-                    if (dr["Contraseña"].ToString() == contraseña)
+                    dr = cmd.ExecuteReader();
+                    if (dr.Read())
                     {
-                        if (TbContraseñaN.Text == TbContraseñaR.Text)
+                        if (dr["Contraseña"].ToString() == contraseña)
                         {
-                            contraseña = GetSHA256(TbContraseñaN.Text);
-                            conn.Close();
-                            conn.Open();
-                            cmd = new SqlCommand("UPDATE Usuario SET Contraseña = '" + contraseña + "' WHERE Documento = " + Session["Id_Usuario"].ToString() + "", conn);
-                            try
+                            if (TbContraseñaN.Text == TbContraseñaR.Text)
                             {
-                                cmd.ExecuteReader();
-                                MultiView1.ActiveViewIndex = -1;
-                            }
-                            catch (Exception ex)
-                            {
-                                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('" + ex + "')", true);
-                            }
-                            finally
-                            {
+                                contraseña = GetSHA256(TbContraseñaN.Text);
                                 conn.Close();
+                                conn.Open();
+                                cmd = new SqlCommand("UPDATE Usuario SET Contraseña = '" + contraseña + "' WHERE Documento = " + Session["Id_Usuario"].ToString() + "", conn);
+                                try
+                                {
+                                    cmd.ExecuteReader();
+                                    MultiView1.ActiveViewIndex = -1;
+                                }
+                                catch (Exception ex)
+                                {
+                                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('" + ex + "')", true);
+                                }
+                                finally
+                                {
+                                    conn.Close();
+                                }
+                            }
+                            else
+                            {
+                                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('Las contraseñas nuevas no coinciden!!')", true);
                             }
                         }
                         else
                         {
-                            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('Las contraseñas nuevas no coinciden!!')", true);
+                            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('Verifica tu contraseña antigua!!')", true);
                         }
                     }
                     else
                     {
-                        ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('Verifica tu contraseña antigua!!')", true);
+                        ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('No lo lee')", true);
                     }
                 }
-                else
+                catch (Exception ex)
                 {
-                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('No lo lee')", true);
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('" + ex + "')", true);
                 }
-            }
-            catch(Exception ex)
-            {
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('" + ex + "')", true);
-            }
-            finally
-            {
-                conn.Close();
-            }
+                finally
+                {
+                    conn.Close();
+                }
+            
         }
 
         public static string GetSHA256(string str)

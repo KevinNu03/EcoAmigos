@@ -29,47 +29,68 @@ namespace EcoAmigios.Forms
             for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
             return sb.ToString();
         }
+        public static string Encriptar(string _cadenaAencriptar)
+        {
+            string result = string.Empty;
+            byte[] encryted = System.Text.Encoding.Unicode.GetBytes(_cadenaAencriptar);
+            result = Convert.ToBase64String(encryted);
+            return result;
+        }
 
         protected void BtSiguiente_Click(object sender, EventArgs e)
         {
-            if(TbContrasena.Text != "" || TbVerificacionC.Text != "")
+            if (CBDatos.Checked == true)
             {
-                if(TbContrasena.Text == TbVerificacionC.Text)
+                if (TbContrasena.Text != "" || TbVerificacionC.Text != "")
                 {
-                    try
+                    if (TbContrasena.Text == TbVerificacionC.Text)
                     {
-                        string contraseña = GetSHA256(TbContrasena.Text);
-                        conn.Open();
-                        string query = "INSERT INTO Usuario (Tipo_Documento,Documento,Nombres,Apellidos,Correo,Telefono,Usuario,Contraseña) VALUES('" + Session["ID_Tipo_Usuario"].ToString() + "'," + int.Parse(Session["ID_Usuario"].ToString()) + ",'" + Session["Nombre_Usu"].ToString() + "','" + Session["Apellido_Usu"].ToString() + "','" + Session["Correo_Usu"].ToString() + "'," + int.Parse(Session["Telefono_Usu"].ToString()) + ",'" + Session["Usuario_Usu"].ToString() + "','" + contraseña + "')";
-                        SqlCommand ejecutor = new SqlCommand(query, conn);
-                        ejecutor.ExecuteNonQuery();
+                        try
+                        {
+                            string contraseña = GetSHA256(TbContrasena.Text);
+                            string id = Encriptar(Session["ID_Usuario"].ToString());
+                            string nombre = Encriptar(Session["Nombre_Usu"].ToString());
+                            string apellido = Encriptar(Session["Apellido_Usu"].ToString());
+                            string correo = Encriptar(Session["Correo_Usu"].ToString());
+                            string telefono = Encriptar(Session["Telefono_Usu"].ToString());
+                            string usuario = Encriptar(Session["Usuario_Usu"].ToString());
+                            conn.Open();
+                            string query = "INSERT INTO Usuario (Tipo_Documento,Documento,Nombres,Apellidos,Correo,Telefono,Usuario,Contraseña) VALUES('" + Session["ID_Tipo_Usuario"].ToString() + "','" + id + "','" + nombre + "','" + apellido + "','" + correo + "','" + telefono + "','" + usuario + "','" + contraseña + "')";
+                            SqlCommand ejecutor = new SqlCommand(query, conn);
+                            ejecutor.ExecuteNonQuery();
+                            ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Usuario resgistrado satisfactoriamente!!');", true);
+                            Session["ID_Tipo_Usuario"] = null;
+                            Session["ID_Usuario"] = null;
+                            Session["Nombre_Usu"] = null;
+                            Session["Apellido_Usu"] = null;
+                            Session["Correo_Usu"] = null;
+                            Session["Telefono_Usu"] = null;
+                            Session["Usuario_Usu"] = null;
 
-                        Session["ID_Tipo_Usuario"] = null;
-                        Session["ID_Usuario"] = null;
-                        Session["Nombre_Usu"] = null;
-                        Session["Apellido_Usu"] = null;
-                        Session["Correo_Usu"] = null;
-                        Session["Telefono_Usu"] = null;
-                        Session["Usuario_Usu"] = null;
-                        Response.Redirect("Login_Usu.aspx");
+                        }
+                        catch (Exception ex)
+                        {
+                            ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('" + ex + "');", true);
+                        }
+                        finally
+                        {
+                            Response.Redirect("Login_Usu.aspx");
+                            conn.Close();
+                        }
                     }
-                    catch(Exception ex)
+                    else
                     {
-                        ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('"+ ex +"');", true);
-                    }
-                    finally
-                    {
-                        conn.Close();
+                        ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Las contraseñas no coinciden');", true);
                     }
                 }
                 else
                 {
-                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Las contraseñas no coinciden');", true);
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Faltan Datos!!');", true);
                 }
             }
             else
             {
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Faltan Datos!!');", true);
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Debes aceptar el tratamiento de tus datos para crear la cuenta!!');", true);
             }
         }
 

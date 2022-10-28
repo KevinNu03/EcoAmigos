@@ -30,12 +30,16 @@
                <div>
                               
                <asp:Label ID="lbContrasena" runat="server" Text="Contraseña:" ></asp:Label>
-               <asp:TextBox ID="TbContrasena" CssClass="form-control" runat="server" placeholder="Contraseña" TextMode="Password"></asp:TextBox>
+               <asp:TextBox ID="TbContrasena" CssClass="form-control" runat="server" placeholder="Contraseña" TextMode="Password" Rows="8"></asp:TextBox>
 
                <asp:Label ID="lbVerificacionC" runat="server" Text="Verificacion de Contraseña:" ></asp:Label>
                <asp:TextBox ID="TbVerificacionC" CssClass="form-control" runat="server" placeholder="Verificacion de Contraseña" TextMode="Password"></asp:TextBox>
             </div>
+                              <asp:CheckBox ID="CBDatos" runat="server" Text="     Tratamiento de datos personales" />
             <div class="row">
+
+                
+                <br />
 
                <asp:Button ID="BtSiguiente" cssclass =" btn btn-primary btn-dark" runat="server" Text="Siguiente" OnClick="BtSiguiente_Click" />
                <asp:Button ID="BtRegresar" cssclass =" btn btn-primary btn-dark" runat="server" Text="Regresar" OnClick="BtRegresar_Click" />

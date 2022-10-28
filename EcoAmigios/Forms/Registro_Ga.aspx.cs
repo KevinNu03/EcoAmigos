@@ -18,14 +18,20 @@ namespace EcoAmigios.Forms
         {
 
         }
-
+        public static string Encriptar(string _cadenaAencriptar)
+        {
+            string result = string.Empty;
+            byte[] encryted = System.Text.Encoding.Unicode.GetBytes(_cadenaAencriptar);
+            result = Convert.ToBase64String(encryted);
+            return result;
+        }
         protected void BtnSiguiente_Click(object sender, EventArgs e)
         {
             if(ListGAmbiental.SelectedIndex != 0)
             {
                 if (TbGNombre.Text != "" || TbGTelefono.Text != "" || TbGIdentificacion.Text != "")
                 {
-                    cmd = new SqlCommand("Select * From GruAmbiental Where Nombre_Gru = '" + TbGNombre.Text + "' or Identificacion = '" + TbGIdentificacion.Text + "'", conn);
+                    cmd = new SqlCommand("Select * From GruAmbiental Where Nombre_Gru = '" + Encriptar(TbGNombre.Text) + "' or Identificacion = '" + Encriptar(TbGIdentificacion.Text) + "'", conn);
                     conn.Open();
                     try
                     {

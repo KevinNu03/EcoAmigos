@@ -29,7 +29,7 @@
             <div class="form-control">
                 <div>
                     <asp:Label ID="lbIdentificacion" runat="server" Text="Identificacion:"></asp:Label>
-                    <asp:TextBox ID="TbGIdentificacion" CssClass="form-control" runat="server" placeholder="Identificacion del Usuario"></asp:TextBox>
+                    <asp:TextBox ID="TbGIdentificacion" CssClass="form-control" runat="server" placeholder="Identificacion del Usuario" MaxLength="10"></asp:TextBox>
 
                     <asp:Label ID="lbGambiental" runat="server" Text="Nombre:"></asp:Label>
                     <asp:TextBox ID="TbGNombre" CssClass="form-control" runat="server" placeholder="Nombres del Grupo Ambiental"></asp:TextBox>
@@ -43,7 +43,7 @@
                     </asp:DropDownList>
 
                     <asp:Label ID="lbGambiental2" runat="server" Text="Telefono:"></asp:Label>
-                    <asp:TextBox ID="TbGTelefono" CssClass="form-control" runat="server" placeholder="Telefono del Grupo Ambiental"></asp:TextBox>
+                    <asp:TextBox ID="TbGTelefono" CssClass="form-control" runat="server" placeholder="Telefono del Grupo Ambiental" MaxLength="10" TextMode="Phone"></asp:TextBox>
                 </div>
                 <div class="row">
                     <asp:Button ID="BtnSiguiente" CssClass=" btn btn-primary btn-dark" runat="server" Text="Siguiente" OnClick="BtnSiguiente_Click" />

@@ -37,7 +37,7 @@
                 <div>
 
                     <asp:Label ID="lbIdentificacion" runat="server" Text="Identificacion:"></asp:Label>
-                    <asp:TextBox ID="TbIdentificacion" CssClass="form-control" runat="server" placeholder="Identificacion del Usuario"></asp:TextBox>
+                    <asp:TextBox ID="TbIdentificacion" CssClass="form-control" runat="server" placeholder="Identificacion del Usuario" MaxLength="10"></asp:TextBox>
 
                     <asp:Label ID="lbUsuario" runat="server" Text="Nombres:"></asp:Label>
                     <asp:TextBox ID="TbNombre" CssClass="form-control" runat="server" placeholder="Nombres del Usuario"></asp:TextBox>
@@ -46,7 +46,7 @@
                     <asp:TextBox ID="TbApellido" CssClass="form-control" runat="server" placeholder="Apellidos del Usuario"></asp:TextBox>
 
                     <asp:Label ID="lbTusuario" runat="server" Text="Telefono:"></asp:Label>
-                    <asp:TextBox ID="TbTelefono" CssClass="form-control" runat="server" placeholder="Telefono del Usuario"></asp:TextBox>
+                    <asp:TextBox ID="TbTelefono" CssClass="form-control" runat="server" placeholder="Telefono del Usuario" MaxLength="10" TextMode="Phone"></asp:TextBox>
 
                 </div>
                 <div class="row">

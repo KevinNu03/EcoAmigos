@@ -64,6 +64,20 @@ namespace EcoAmigios.Forms
                
         }
 
+        public static string Encriptar(string _cadenaAencriptar)
+        {
+            string result = string.Empty;
+            byte[] encryted = System.Text.Encoding.Unicode.GetBytes(_cadenaAencriptar);
+            result = Convert.ToBase64String(encryted);
+            return result;
+        }
+        public static string DesEncriptar(string _cadenaAdesencriptar)
+        {
+            string result = string.Empty;
+            byte[] decryted = Convert.FromBase64String(_cadenaAdesencriptar);
+            result = System.Text.Encoding.Unicode.GetString(decryted);
+            return result;
+        }
         protected void IBMensaje_Click(object sender, ImageClickEventArgs e)
         {
             conn.Open();
@@ -74,21 +88,24 @@ namespace EcoAmigios.Forms
                 dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    string ID = dr["Identificacion"].ToString();
+                    string ID = Encriptar(dr["Identificacion"].ToString());
                     conn.Close();
                     conn.Open();
-                    cmd = new SqlCommand("SELECT * FROM GruAmbiental WHERE Identificacion = " + ID + "", conn);
+                    cmd = new SqlCommand("SELECT * FROM GruAmbiental WHERE Identificacion = '" + ID + "'", conn);
                     try
                     {
                         dr = cmd.ExecuteReader();
                         if (dr.Read())
                         {
-                            Response.Redirect("https://wa.me/57" + dr["Telefono"].ToString());
+                            Int64 telefono = Int64.Parse(DesEncriptar(dr["Telefono"].ToString()));
+                            Response.Redirect("https://wa.me/57" + telefono);
                         }
                     }
                     catch(Exception ex)
                     {
                         ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('" + ex + "!!')", true);
+
+                        Label49.Text = "" + ex;
                     }
                     finally
                     {

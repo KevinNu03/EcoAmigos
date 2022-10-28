@@ -23,36 +23,55 @@ namespace EcoAmigios.Forms
         {
             Response.Redirect("Registro_Ga_Correo.aspx");
         }
+        public static string Encriptar(string _cadenaAencriptar)
+        {
+            string result = string.Empty;
+            byte[] encryted = System.Text.Encoding.Unicode.GetBytes(_cadenaAencriptar);
+            result = Convert.ToBase64String(encryted);
+            return result;
+        }
 
         protected void BtnSiguiente_Click(object sender, EventArgs e)
         {
-            if(TbGContrasena.Text != "" || TbGVerificacionC.Text != "")
+            if (CBDatos.Checked == true)
             {
-                if(TbGVerificacionC.Text == TbGContrasena.Text)
+                if (TbGContrasena.Text != "" || TbGVerificacionC.Text != "")
                 {
-                    string contraseña = GetSHA256(TbGContrasena.Text);
-                    conn.Open();
-                    string query = "INSERT INTO GruAmbiental (Identificacion,Nombre_Gru,Tipo_Grupo,Telefono,Correo,Contraseña) VALUES(" + int.Parse(Session["ID_Grupo_Ambiental"].ToString()) + ",'" + Session["Nombre_Grupo"].ToString() + "','" + Session["Tipo_Grupo"].ToString() + "'," + int.Parse(Session["Telefono_Grupo"].ToString()) + ",'" + Session["Correo_Grupo"].ToString() + "','" + contraseña + "')";
-                    SqlCommand ejecutor = new SqlCommand(query, conn);
-                    ejecutor.ExecuteNonQuery();
-
-                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Mnesaje Alerta!", "alert('Se ha registrado correctamente')", true);
-                    Session["ID_Grupo_Ambiental"] = null;
-                    Session["Nombre_Grupo"] = null;
-                    Session["Tipo_Grupo"] = null;
-                    Session["Telefono_Grupo"] = null;
-                    Session["Correo_Grupo"] = null;
-                    Response.Redirect("Login_Ga.aspx");
+                    if (TbGVerificacionC.Text == TbGContrasena.Text)
+                    {
+                        string contraseña = GetSHA256(TbGContrasena.Text);
+                        string id = Encriptar(Session["ID_Grupo_Ambiental"].ToString());
+                        string Nombre_gru = Encriptar(Session["Nombre_Grupo"].ToString());
+                        string Telefono = Encriptar(Session["Telefono_Grupo"].ToString());
+                        string Correo = Encriptar(Session["Correo_Grupo"].ToString());
+                        conn.Open();
+                        string query = "INSERT INTO GruAmbiental (Identificacion,Nombre_Gru,Tipo_Grupo,Telefono,Correo,Contraseña) VALUES('" + id + "','" + Nombre_gru + "','" + Session["Tipo_Grupo"].ToString() + "','" + Telefono + "','" + Correo + "','" + contraseña + "')";
+                        SqlCommand ejecutor = new SqlCommand(query, conn);
+                        ejecutor.ExecuteNonQuery();
+                        Session["ID_Grupo_Ambiental"] = null;
+                        Session["Nombre_Grupo"] = null;
+                        Session["Tipo_Grupo"] = null;
+                        Session["Telefono_Grupo"] = null;
+                        Session["Correo_Grupo"] = null;
+                        Page.ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Se ha creado su cuenta satisfactoriamente!!');", true);
+                        Response.Redirect("Login_Ga.aspx");
+                    }
+                    else
+                    {
+                        ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Las contraseñas no coinciden!!');", true);
+                    }
                 }
                 else
                 {
-                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Las contraseñas no coinciden!!');", true);
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Debe llenar todos los campos!!');", true);
+
                 }
             }
             else
             {
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Debe llenar todos los campos!!');", true);
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Debes confirmar el tratamientos de tus datos para crear la cuenta');", true);
             }
+
         }
 
         public static string GetSHA256(string str)
