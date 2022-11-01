@@ -33,9 +33,10 @@ namespace EcoAmigios.Forms
 
         protected void BtSiguiente_Click(object sender, EventArgs e)
         {
+            TbUsuario.Text.ToUpper();
                 if (TbCorreo.Text != "")
                 {
-                    cmd = new SqlCommand("Select * From Usuario Where Usuario = '" + Encriptar(TbUsuario.Text) + "'", conn);
+                    cmd = new SqlCommand("Select * From Usuario Where Usuario = '" + Encriptar(TbUsuario.Text.ToUpper()) + "'", conn);
                     conn.Open();
                     try
                     {
@@ -98,7 +99,7 @@ namespace EcoAmigios.Forms
             // Find your Account SID and Auth Token at twilio.com/console
             // and set the environment variables. See http://twil.io/secure
             string accountSid = "AC24e1dcdd26faa02c8b81dd813061b963";
-            string authToken = "aa1e4207108a466913ee63fe5c3e396a";
+            string authToken = "1b13c088405138c1eca14a845af0a1cb";
 
             TwilioClient.Init(accountSid, authToken);
 
